@@ -48,6 +48,11 @@
     php_fpm_conf_path: "{{ __php_fpm_conf_path }}"
   when: php_fpm_conf_path is not defined
 
+- name: Define php_fpm_do_config.
+  set_fact:
+    php_fpm_do_config: "{{ __php_fpm_do_config }}"
+  when: php_fpm_do_config is not defined
+
 # Setup/install tasks.
 - include_tasks: setup-RedHat.yml
   when:
