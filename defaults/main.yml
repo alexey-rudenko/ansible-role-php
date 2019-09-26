@@ -131,5 +131,5 @@ php_source_configure_command: >
   --with-mysqli=/usr/bin/mysql_config
 
 # Default timeouts
-php_default_socket_timeout = 60
-php_mysql_connect_timeout = 60
+php_default_socket_timeout: 60
+php_mysql_connect_timeout: 60
